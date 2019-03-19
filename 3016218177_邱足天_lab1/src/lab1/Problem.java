@@ -81,11 +81,14 @@ public class Problem {
 	}
 	
 	public static void main(String [] args){
-		Scanner sc = new Scanner(System.in);
-		System.out.print("请输入给定的数字:");
-		givenNumber = sc.nextInt();
-		String result = solution();
-		System.out.print(result);
+		while(true){
+			init();
+			Scanner sc = new Scanner(System.in);
+			System.out.print("请输入给定的数字:");
+			givenNumber = sc.nextInt();
+			String result = solution();
+			System.out.println(result);
+		}
 	}
 	
 }
